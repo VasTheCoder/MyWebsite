@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(218, 205, 24);
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.board {
+    min-width: 35vw;
+    height: 35vw;
+    background-image: url(https://i.stack.imgur.com/mVGfG.png);
+    background-size: cover;
+    border-radius: 2vw;
+    box-shadow: 0 0 15px rgba(50, 50, 50, .5);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .2vw;
+}
+
+.board:hover {
+    cursor: pointer;
+}
+
+.cell {
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle {
+    background-image: url(https://raw.githubusercontent.com/russs123/tictactoe-tutorial/main/circle.png);
+}
+
+.cross {
+    background-image: url(https://raw.githubusercontent.com/russs123/tictactoe-tutorial/main/cross.png);
+}
+
+button[type=reset] {
+    background-color: rgb(38, 211, 32);
+    border: none;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#result {
+    font-size: larger;
+    text-align: center;
+}
